@@ -1,5 +1,5 @@
 [target.x86_64-unknown-linux-musl]
-linker = "musl-gcc"
+linker = "gcc"
 rustflags = [
   "-C", "link-arg=-s", "-C", "target-feature=+crt-static" 
 ]

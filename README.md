@@ -21,22 +21,13 @@ docker container run -v ${PWD}:/mnt/ -it ${IMAGE_NAME_TARGET}
 ## setup cross-chain-tool on HOST PC
 ```bash
 # target list
-rustc --print target-list
+rustup target list
 
 # install toolchain?
 rustup target add x86_64-unknown-linux-musl
-# install toolchain?
-rustup toolchain install x86_64-unknown-linux-musl
 
 # show default target
 rustup show
-
-# change default target?
-rustup override set 1.53-x86_64-unknown-linux-musl
-## (message) 1.53-x86_64-unknown-linux-musl installed - (error reading rustc version)
-
-# nightly
-rustup update nightly
 
 ```
 
