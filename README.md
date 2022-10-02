@@ -8,6 +8,7 @@ docker build -f ./dockerfiles/HOST/Dockerfile -t ${IMAGE_NAME_HOST} .
 
 # start
 # Ex) docker container run -v $(pwd):/mnt/ -it myubuntu
+# Ex) docker container run -v $PWD:/mnt/ -it myubuntu
 docker container run -v ${PWD}:/mnt/ -it ${IMAGE_NAME_HOST}
 ```
 
@@ -19,6 +20,7 @@ docker build -f ./dockerfiles/TARGET/Dockerfile -t ${IMAGE_NAME_TARGET} .
 
 # start
 # Ex) docker container run -v $(pwd):/mnt/ -it myalpine
+# Ex) docker container run -v $PWD:/mnt/ -it myalpine
 docker container run -v ${PWD}:/mnt/ -it ${IMAGE_NAME_TARGET}
 ```
 
