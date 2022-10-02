@@ -1,4 +1,4 @@
-# rust-cross-builder
+# wpoc
 ## Preparation
 HOST PC (ubuntu, x86_64-unknown-linux-gnu)
 ```bash
